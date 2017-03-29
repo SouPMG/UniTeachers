@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Definition of simple elements -->
+<xs:element name="password">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="8"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="name">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="surname">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="city">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="country">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="title">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="price" type="xs:float"/>
+<xs:element name="teacher">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="grade">
+	<xs:simpleType>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="note">
+<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="150"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+
+<!-- definition of attributes -->
+<xs:attribute name="id" type="xs:string"/>
+
+<!-- Definition of complex elements -->
+<xs:element name="info">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element ref="surname"/>
+			<xs:element ref="city"/>
+			<xs:element ref="country"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="course">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="title"/>
+			<xs:element ref="price"/>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:element>
+
+<xs:element name="feedback">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="teacher"/>
+			<xs:element ref="grade"/>
+			<xs:element ref="note"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="user">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="password"/>
+			<xs:element ref="info"/>
+			<xs:element ref="course" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="feedback" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="id" use="required"/>
+	</xs:complexType>
+	<!-- Keys -->
+	<xs:key name="PKCourse">
+		<xs:selector xpath="course"/>
+		<xs:field xpath="title"/>
+	</xs:key>
+</xs:element>
+
+<xs:element name="database">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="user" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Keys -->
+	<xs:key name="PKUser">
+		<xs:selector xpath="user"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	<xs:keyref name="FKFeedback" refer="PKUser">
+		<xs:selector xpath="user/feedback"/>
+		<xs:field xpath="teacher"/>
+	</xs:keyref>
+</xs:element>
+
+</xs:schema>

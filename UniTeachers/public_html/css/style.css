@@ -1,0 +1,456 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 70em;
+	margin: 0 auto;
+	font-size: 0.9em;
+	font-family: Verdana, Helvetica, Sans-Serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-variant: small-caps;
+}
+
+a:link {
+	color: #009;
+}
+
+a:visited {
+	color: #A0A;
+}
+
+a:hover {
+    font-variant: small-caps;
+}
+
+img {
+	border-width: 0;
+}
+
+.helper {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	overflow: hidden;
+	top: -10px;
+}
+
+/* Style for static parts */
+#header {
+	background-color: #CFE2FF;	
+}
+
+#logo {
+	font-size: 2.5em;
+	margin: 0px;
+	padding: 0.5em;
+}
+
+#navbar ul, #userbar ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style: none;
+}
+
+#navbar li, #userbar li {
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	background-color: #e3eeff;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#userbar li {
+	border-left: 1px solid #FFFFFF;
+}
+#navbar li:last-child {
+	border-right: none;
+}
+
+#navbar li {
+	width: 25%;
+}
+
+#userbar li {
+	width: 33%;
+}
+
+#navbar a, #userbar a {
+	display: block;
+	text-align: center;
+	padding: 1em 2em;
+	text-decoration: none;
+}
+
+#navbar a:hover, #userbar a:hover {
+	background-color: #CFE2FF;
+}
+
+#navbar .active, #userbar .active {
+	background-color: #CFE2FF;
+	padding: 1em 0;
+}
+
+#accessibility {
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	overflow: hidden;
+}
+
+#breadcrumb {
+	border-top: 2px solid #CFE2FF;
+	border-bottom: 2px solid #CFE2FF;
+	margin-top: 0.5em;
+	padding: 0.3em;
+	color: #585858;
+	font-variant: small-caps;
+}
+
+#footer {
+	float: left;
+	width: 100%;
+	padding: 1em;
+	background-color: #CFE2FF;	
+}
+
+#footer fieldset {
+	border: 1px solid white;
+}
+
+#valid {
+	width: 40%;
+	float: left;	
+	text-align: center;
+}
+
+#valid #sitemap {
+	display: block;
+	text-decoration: underline;
+	margin-bottom: 0.5em;
+}
+
+#valid a {
+	text-decoration: none;
+}
+
+.login, #userbar{
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+
+#gotop {
+	width: 2em;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	background-color: #E3EEFF;
+	display: block;
+	border: 1px solid black;
+}
+
+#gotop img {
+	width: 100%;
+}
+
+#gotop:hover {
+	background-color: #CFE2FF;
+}
+
+.heading {
+	text-align: center;
+}
+
+/* Home Page */
+.description {
+	text-align: center;
+}
+
+.description p {
+	margin: 0.4em 0;
+}
+
+.panel {
+	padding: 1em 0 3em 0 ;
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.panel img {
+	width:100%;	
+}
+
+/* Pagina Insegnanti */
+
+/* Casella di ricerca e form style */
+.search {
+	width: 100%;
+	padding: 1em 0;
+	text-align: center;
+}
+
+#search {
+	width: 18em;
+	height: 2em;
+}
+
+.search select {
+	width: 18em;
+	height: 2em;
+}
+
+.showall {
+	border: 1px solid #929292;
+	display: inline-block;
+	padding: 0.2em 0;
+	background-color: #E0E0E0;
+	border-radius: 0.2em;
+	float: right;
+}
+
+.showall a {
+	text-decoration: none;
+	color: #4C4C6A;
+	padding: 0 1.6em;
+}
+
+.showall a:visited {
+	color: #4C4C6A;
+}
+
+.showall a:hover {
+	font-variant: normal;
+}
+
+.search .field, .login .field {
+	display: inline-block;
+}
+
+.noresult {
+	border: 2px solid #F00;
+	padding: 1em;
+	margin: 3em 0em 1em;
+	text-align: center;
+}
+
+.feedback .field {
+	display: block;
+}
+
+.field label {
+	display: block;
+}
+
+.submit {
+	margin: 1em auto 0px;
+	height: 2em;
+}
+
+.register .submit, .feedback .submit {
+	width: 6em;
+	display: inline-block;
+}
+
+.search .submit, .login .submit {
+	display: block;
+}
+
+.search .submit {
+	width: 8em;
+	font-size: 1em;
+}
+
+.edit .submit {
+	width: 10em;
+	display: inline-block;
+}
+
+.feedback, .register, .edit {
+	margin: 1em 0;
+}
+
+.feedback .field, .register .field, .edit .field {
+	margin: 1em 0;
+}
+
+.edit {
+	text-align: left;
+}
+
+.feedback #fnote {
+	resize: vertical;
+}
+
+.feedback #fgrade {
+	width: 5em;
+}
+
+.feedback #fnote {
+	width: 100%;
+}
+
+.feedback #fusername, .register input, .edit input {
+	width: 20em;
+}
+
+legend {
+	font-variant: small-caps;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+/* Style for data display */
+.data-heading {
+	margin: 0 0 0.5em 0;
+	display: inline-block;
+}
+
+.data {
+	padding: 1em 0;
+}
+
+.half {
+	width: 50%;
+	float: left;
+}
+
+.half ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: outside none none;
+}
+
+.half li {
+	line-height: 2.5em;
+}
+
+.full {
+	clear: both;
+}
+
+.data table {
+	width: 100%;
+	text-align: center;
+}
+
+.data thead {
+	background-color: #CFE2FF;
+}
+
+.data th {
+	padding: 1em 0;
+}
+
+.data td {
+	padding: 0.5em 0;
+}
+
+.info {
+	font-weight: bold;
+	width: 8em;
+	float: left;
+}
+
+/* Messaggi */
+
+.success, .error, .rerror {
+	text-align:center;
+	padding: 0.3em;
+	width: 100%;
+	clear: both;
+}
+
+.success {
+	border: 2px solid green;
+}
+
+.error, .rerror {
+	border: 2px solid red;
+}
+
+.rerror {
+	display:none;	
+}
+
+#navbar li, #userbar li {
+	*border: none;
+}
+
+@media screen and ( max-width:1024px ) {
+	body {
+		width: 53em;
+	}
+	
+	.login, #userbar {
+		width:100%;
+	}
+	
+	#valid {
+		width: 100%;
+	}
+	
+	#sitemap {
+		margin: 0.8em 0;
+	}
+}
+
+@media screen and ( max-width:768px ) {
+	html, body {
+		margin: 0; 
+		padding: 0;
+		width: 100%;
+	}
+	
+	#header {
+		text-align: center;
+	}
+
+	#navbar li {
+		width:100%;
+		border-right:none;
+	}
+	
+	#content {
+		padding: 0 1em;
+	}
+	
+	#userbar li {
+		width:100%;	
+	}
+	
+	.half {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and ( max-width:520px ) {
+	#valid {
+		width:100%;
+	}
+	
+	.panel {
+		width:100%;
+	}
+}

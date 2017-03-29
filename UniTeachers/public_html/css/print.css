@@ -1,0 +1,104 @@
+/*Immagini nascoste*/
+.panel img {
+	display: none;
+}
+
+/*Validazione nascosta*/
+#valid {
+	display: none;
+}
+
+/*Visualizzazione link completo*/
+a:after {
+	content: " (http://tecweb.studenti.math.unipd.it/tecweb/~nteslaru/cgi-bin/" attr(href) ") ";
+}
+
+/*Accessibilita' nascosta*/
+#accessibility {
+	display: none;
+}
+
+/*Footer nascosto*/
+#footer {
+	display: none;
+}
+
+/*Allineamento descrizione*/
+.description {
+	text-align: left;
+}
+
+.searchheader {
+	display: none;
+}
+
+td {
+	text-align:left;
+	padding: 1em;
+}
+
+.showall {
+	display: none;
+}
+
+#navbar {
+	display: none;
+}
+
+.search .field, .login .field {
+	display: inline-block;
+}
+
+.feedback .field {
+	display: block;
+}
+
+.field label {
+	display: block;
+}
+
+#submit {
+	display: block;
+	margin: 1em auto 0px;
+	width: 6em;
+	height: 2em;
+}
+
+.edit #submit {
+	width: 10em;
+}
+
+.feedback, .register, .edit {
+	margin: 1em 0;
+}
+
+.feedback .field, .register .field, .edit .field {
+	margin: 1em 0;
+}
+
+.edit {
+	text-align: left;
+}
+
+.feedback #fusername, .feedback #fnote {
+	width: 100%;
+}
+
+.feedback #fgrade {
+	width: 5em;
+}
+
+.register input, .edit input {
+	width: 20em;
+}
+
+legend {
+	font-variant: small-caps;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+.error, .rerror, .success {
+	display: none;
+}

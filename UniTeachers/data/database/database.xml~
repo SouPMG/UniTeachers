@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="schema.xsd">
+	<user id="admin@admin.it">
+		<password>admin</password>
+		<info>
+			<name>admin</name>
+			<surname>admin</surname>
+			<city>Nicolae</city>
+			<country>Teslaru</country>
+		</info>
+			
+		<course>
+			<title>Basi di Dati</title>
+			<price>14</price>
+		</course>	
+		<course>
+			<title>Tecnologie Web</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Programmazione</title>
+			<price>13</price>
+		</course>	
+		<course>
+			<title>Matematica</title>
+			<price>13</price>
+		</course>
+		<feedback>
+			<teacher>admin@admin.it</teacher>
+			<grade>3</grade>
+			<note>Soddisfacente</note>
+		</feedback>
+		<feedback>
+			<teacher>admin@admin.it</teacher>
+			<grade>5</grade>
+			<note>""</note>
+		</feedback>
+		<feedback>
+			<teacher>admin@admin.it</teacher>
+			<grade>3</grade>
+			<note><p>asd</p></note>
+		</feedback>
+	</user>
+	<user id="mattia@ciao.it">
+		<password>admin</password>
+		<info>
+			<name>Mattia</name>
+			<surname>Giacobbe</surname>
+			<city>Vigonza</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Geografia</title>
+			<price>8</price>
+		</course>
+		<course>
+			<title>Informatica</title>
+			<price>20</price>
+		</course>	
+		<course>
+			<title>Matematica</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Tecnologie Web</title>
+			<price>12</price>
+		</course>	
+		<feedback>
+				<teacher>mattia@ciao.it</teacher>
+				<grade>5</grade>
+				<note>Perche' ha tenuto un corso stupendo.</note>
+			</feedback>
+		<feedback>
+				<teacher>mattia@ciao.it</teacher>
+				<grade>4</grade>
+				<note>Perche' mi ha illuminato.</note>
+			</feedback>
+		<feedback>
+				<teacher>mattia@ciao.it</teacher>
+				<grade>5</grade>
+				<note>Perche' e' un ottimo insegnante.</note>
+			</feedback>
+	</user>
+	<user id="marco@gmail.com">
+		<password>password</password>
+		<info>
+			<name>Marco</name>
+			<surname>Carturan</surname>
+			<city>Cartura</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Inglese</title>
+			<price>18</price>
+		</course>	
+		<course>
+			<title>Canto</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Musica</title>
+			<price>10</price>
+		</course>	
+		<feedback>
+				<teacher>marco@gmail.com</teacher>
+				<grade>1</grade>
+				<note>Perche' non ho capito molto di quello che ha spiegato.</note>
+			</feedback>
+		<feedback>
+				<teacher>marco@gmail.com</teacher>
+				<grade>2</grade>
+				<note>Perche' non sa fare l'insegnante.</note>
+			</feedback>
+		<feedback>
+				<teacher>marco@gmail.com</teacher>
+				<grade>1</grade>
+				<note>Perche' ho ancora molte lacune.</note>
+			</feedback>
+	</user>
+	<user id="tesla@live.it">
+		<password>password</password>
+		<info>
+			<name>Nicolae</name>
+			<surname>Teslaru</surname>
+			<city>Cadoneghe</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Musica</title>
+			<price>19</price>
+		</course>	
+		<course>
+			<title>Algebra</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Informatica</title>
+			<price>12</price>
+		</course>	
+		<course>
+			<title>Programmazione</title>
+			<price>20</price>
+		</course>	
+		<feedback>
+				<teacher>tesla@live.it</teacher>
+				<grade>5</grade>
+				<note>Ha chiarito molti dubbi.</note>
+			</feedback>
+		<feedback>
+				<teacher>tesla@live.it</teacher>
+				<grade>4</grade>
+				<note>Perche' mi ha fatto passare l'esame.</note>
+			</feedback>
+		<feedback>
+				<teacher>tesla@live.it</teacher>
+				<grade>5</grade>
+				<note>Ha tenuto lezioni ottime.</note>
+			</feedback>
+	</user>
+	<user id="pino@birdy.com">
+		<password>password</password>
+		<info>
+			<name>Pino</name>
+			<surname>Scotto</surname>
+			<city>Padova</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Tecnologie Web</title>
+			<price>16</price>
+		</course>	
+		<course>
+			<title>Biologia</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Economia</title>
+			<price>14</price>
+		</course>	
+		<feedback>
+				<teacher>pino@birdy.com</teacher>
+				<grade>5</grade>
+				<note>Perche' si chiama Pino.</note>
+			</feedback>
+		<feedback>
+				<teacher>pino@birdy.com</teacher>
+				<grade>4</grade>
+				<note>Perche' non e' Marco.</note>
+			</feedback>
+	</user>
+	<user id="guaca@mole.com">
+		<password>password</password>
+		<info>
+			<name>Guaca</name>
+			<surname>Mole</surname>
+			<city>Vicenza</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Programmazione</title>
+			<price>16</price>
+		</course>	
+		<course>
+			<title>Storia</title>
+			<price>15</price>
+		</course>	
+		<course>
+			<title>Italiano</title>
+			<price>13</price>
+		</course>	
+		<feedback>
+			<teacher>guaca@mole.com</teacher>
+			<grade>4</grade>
+			<note>Spiega le cose in modo chiaro e coinciso.</note>
+		</feedback>
+		<feedback>
+				<teacher>guaca@mole.com</teacher>
+				<grade>2</grade>
+				<note>Non ha rispettato gli orari.</note>
+			</feedback>
+	</user>
+	<user id="salvatore@yahoo.it">
+		<password>12345</password>
+		<info>
+			<name>Salvatore</name>
+			<surname>Asdrubale</surname>
+			<city>Firenze</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Filosofia</title>
+			<price>12</price>
+		</course>	
+		<feedback>
+			<teacher>salvatore@yahoo.it</teacher>
+			<grade>5</grade>
+			<note>Lezioni molto interessanti e ben esposte.</note>
+		</feedback>
+	</user>
+	<user id="gino@gmail.com">
+		<password>12345</password>
+		<info>
+			<name>Gino</name>
+			<surname>Paolo</surname>
+			<city>Venezia</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Filosofia</title>
+			<price>12.4</price>
+		</course>	
+		<course>
+			<title>Matematica</title>
+			<price>12</price>
+		</course>	
+		<course>
+			<title>Economia</title>
+			<price>20</price>
+		</course>	
+		<feedback>
+			<teacher>gino@gmail.com</teacher>
+			<grade>2</grade>
+			<note>Prezzi troppo alti.</note>
+		</feedback>
+		<feedback>
+			<teacher>gino@gmail.com</teacher>
+			<grade>5</grade>
+			<note>Comprensione del contenuto ottima. Segue gli studenti.</note>
+		</feedback>
+		<feedback>
+			<teacher>gino@gmail.com</teacher>
+			<grade>4</grade>
+			<note>Ottimo insegnante anche se i prezzi sono alti.</note>
+		</feedback>
+		<feedback>
+			<teacher>gino@gmail.com</teacher>
+			<grade>4</grade>
+			<note>Serio e professionale. Ottimo insegnamento.</note>
+		</feedback>
+	</user>
+	<user id="paolo.rossi@live.it">
+		<password>12345</password>
+		<info>
+			<name>Paolo</name>
+			<surname>Rossi</surname>
+			<city>Verona</city>
+			<country>Italia</country>
+		</info>
+		<course>
+			<title>Italiano</title>
+			<price>13</price>
+		</course>	
+			
+		<course>
+			<title>Storia dell'arte</title>
+			<price>13.5</price>
+		</course>	
+			
+	</user>
+</database>
